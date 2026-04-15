@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Интерактивный проект IAA System</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+</head>
+<body>
+
+    <div class="blobs-container">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+        <div class="blob blob-4"></div>
+        <div class="blob blob-5"></div>
+    </div>
+
+
+    <div class="glass-card" id="card">
+        <span class="card-label">Узнать больше</span>
+        <div class="main-layout">
+            <div class="card-header">
+                <div class="close-btn" id="closeBtn">×</div>
+            </div>
+
+            <div class="top-nav">
+                <div class="nav-active-indicator"></div>
+                <button class="nav-btn active" data-tab="tech">Устройство</button>
+                <button class="nav-btn" data-tab="features">Преимущества</button>
+                <button class="nav-btn" data-tab="ozon">Ozon</button>
+                <button class="nav-btn" data-tab="author">Автор</button>
+            </div>
+
+            <div class="content-panel">
+
+                <section id="tech" class="content-section active">
+                    <div class="grid-container">
+                        <div class="media-side">
+                            <div class="main-photo">
+
+                                <img src="images/device.jpg" alt="IAA Устройство">
+                            </div>
+                        </div>
+                        <div class="info-side">
+                            <h2>Технология устройтства</h2>
+                            <p>
+                                Устройство на базе мотор-редуктора создает высокочастотные колебания хлыстика с <strong>амплитудой 8–12 мм</strong>, имитируя естественные движения мормыша. Интеллектуальная автоматизация позволяет рыбаку сосредоточиться на тактике, а не на монотонной проводке.
+                                <br><br>
+                                Корпус выполнен из ударопрочного <strong>PETG-пластика</strong>, имеет защиту от влаги по стандарту <strong>IP54</strong> и обеспечивает до <strong>60 часов</strong> автономной работы.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section id="features" class="content-section">
+                    <div class="grid-container features-grid">
+                        <div class="info-side">
+                            <h2>Ключевые преимущества</h2>
+                            <ul class="features-list">
+                                <li>
+                                    <span class="material-icons-outlined">smart_toy</span>
+                                    <div>
+                                        <h3>Интеллектуальная автоматизация</h3>
+                                        <p>Система сама имитирует игру мормышки, освобождая время для выбора тактики и места лова.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="material-icons-outlined">attach_money</span>
+                                    <div>
+                                        <h3>Высокая доступность</h3>
+                                        <p>Стоимость устройства в 3 раза ниже аналогов, что открывает доступ к технологии массовому рынку.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="material-icons-outlined">self_improvement</span>
+                                    <div>
+                                        <h3>Фокус на главном</h3>
+                                        <p>Больше не нужно отвлекаться на монотонную проводку. Сосредоточьтесь на процессе рыбалки и получайте удовольствие.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="media-side">
+                            <div class="main-photo">
+
+                                <img src="images/features.jpg" alt="Преимущества IAA">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section id="ozon" class="content-section">
+                    <div class="ozon-wrapper">
+                        <h2>Доступно для заказа</h2>
+                        <p>Приобретите автоматизированную систему для зимней рыбалки уже сегодня!</p>
+                        <a href="https://www.ozon.ru/product/elektronnaya-podstavka-dlya-zimney-udochki-dlya-lovli-karasya-so-dna-na-ozere-1414489629/?at=pZtpLxAZNsWgrjOWfgrKvwZhoQYp09sNjOBDxsQ1woLk" class="ozon-button" target="_blank">
+                            <span class="material-icons-outlined">shopping_cart</span>
+                            Перейти на Ozon
+                        </a>
+                    </div>
+                </section>
+
+
+                <section id="author" class="content-section">
+                    <div class="grid-container">
+                        <div class="media-side">
+                            <div class="author-photo">
+
+                                <img src="images/author.jpg" alt="Мирон Дмитриев">
+                            </div>
+                        </div>
+                        <div class="info-side">
+                            <h2>Мирон Дмитриев</h2>
+                            <p>
+                                Ученик 7 класса гимназии №47, создатель IAA System — автоматизированной системы для зимней рыбалки.
+                                <br><br>
+                                Является победителем федеральных конкурсов в сфере инноваций и техники, включая <strong>ЮТИ 2024</strong> и конкурс <strong>«Взлет»</strong>, а также финалистом престижного конкурса <strong>«Большие вызовы»</strong>.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
